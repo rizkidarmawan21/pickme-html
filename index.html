@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Test 2 Answer</title>
+    <title>Test 2 Answer Rizki Darmawan</title>
     <style>
       html,
       body {
@@ -30,22 +30,22 @@
       }
       .box_inside,
       .box2_inside {
-        width: 100px;
-        height: 100px;
-        padding: 50px;
+        width: 50px !important;
+        height: 50px !important;
+        padding: 49px;
         box-sizing: border-box;
         float: left;
-        background-image: url(https://static.thenounproject.com/png/2435540-200.png);
+        background-image: url(https://ik.imagekit.io/ef57ibaaq/Group%2011.png);
         background-repeat: no-repeat !important;
         background-size: cover !important;
+        cursor: pointer;
+        transition: all;
+        border: 1px solid grey;
+        border-radius: 10px;
       }
     </style>
   </head>
   <body>
-    <!-- 
-      Note : Im change assets image that has been given but the asset cannot be accessed, 
-      therefore I use another asset
-     -->
     <div class="box" id="horizontalBox"></div>
     <div class="box2" id="verticalBox"></div>
 
@@ -62,25 +62,26 @@
         //if cursor hover on this box, change another box image arrow except this box
         box_inside.onmouseover = function () {
           this.style.backgroundImage =
-            "url(https://static.thenounproject.com/png/2435540-200.png)";
+            "url(https://ik.imagekit.io/ef57ibaaq/Group%2011.png)";
           for (let j = 0; j < 6; j++) {
             if (j != i) {
               // check position of box left or right
               if (j < i) {
                 horizontalBox.children[j].style.backgroundImage =
-                  "url(https://ik.imagekit.io/arg5mt6bd/cdn/1195135-200-removebg-preview.png?updatedAt=1701494538008)";
+                  "url(https://ik.imagekit.io/ef57ibaaq/image.png)";
               } else {
                 horizontalBox.children[j].style.backgroundImage =
-                  "url(https://ik.imagekit.io/arg5mt6bd/cdn/Screenshot_at_Dec_02_12-01-12-removebg-preview.png?updatedAt=1701494538039)";
+                  "url(https://ik.imagekit.io/ef57ibaaq/image_18__1_-removebg-preview.png)";
               }
             }
           }
         };
+
         box_inside.onmouseout = function () {
           for (let j = 0; j < 6; j++) {
             if (j != i) {
               horizontalBox.children[j].style.backgroundImage =
-                "url(https://static.thenounproject.com/png/2435540-200.png)";
+                "url(https://ik.imagekit.io/ef57ibaaq/Group%2011.png)";
             }
           }
         };
@@ -97,16 +98,16 @@
         //if cursor hover on this box, change another box image arrow except this box
         box2_inside.onmouseover = function () {
           this.style.backgroundImage =
-            "url(https://static.thenounproject.com/png/2435540-200.png)";
+            "url(https://ik.imagekit.io/ef57ibaaq/Group%2011.png)";
           for (let j = 0; j < 6; j++) {
             if (j != i) {
               // check position of box left or right
               if (j < i) {
                 verticalBox.children[j].style.backgroundImage =
-                  "url(https://ik.imagekit.io/arg5mt6bd/cdn/Screenshot_at_Dec_02_12-15-17-removebg-preview.png?updatedAt=1701494538086)";
+                  "url(https://ik.imagekit.io/ef57ibaaq/imageb.png)";
               } else {
                 verticalBox.children[j].style.backgroundImage =
-                  "url(https://ik.imagekit.io/arg5mt6bd/cdn/Screenshot_at_Dec_02_12-16-05-removebg-preview.png?updatedAt=1701494538155)";
+                  "url(https://ik.imagekit.io/ef57ibaaq/imaget.png)";
               }
             }
           }
@@ -115,7 +116,7 @@
           for (let j = 0; j < 6; j++) {
             if (j != i) {
               verticalBox.children[j].style.backgroundImage =
-                "url(https://static.thenounproject.com/png/2435540-200.png)";
+                "url(https://ik.imagekit.io/ef57ibaaq/Group%2011.png)";
             }
           }
         };
